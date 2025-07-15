@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Portfolio | Flutter & React Native Expert</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./output.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, #f9f9ff 0%, #f0f4ff 100%);
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.15);
+    }
+
+    .skill-pill:hover {
+      background-color: #e0e7ff;
+      color: var(--primary-dark);
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        padding-top: 80px;
+      }
+    }
+
+    .skill-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+      border-left: 3px solid #6366f1;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .edu-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold font-display gradient-text">Portfolio.</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+        <a href="#about" class="hover:text-indigo-600 transition">About</a>
+        <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+        <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </div>
+      <button class="md:hidden text-gray-600">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-gradient min-h-screen flex items-center pt-20">
+    <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center hero-content">
+      <div class="md:w-3/4 mx-auto mb-12 md:mb-0">
+        <h1 class="text-5xl md:text-6xl font-display font-bold mb-6">
+          Hi, I'm <span class="gradient-text">Ali Amaan</span>
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-medium text-gray-600 mb-8">
+          Expert in <span class="text-indigo-600">Flutter & React Native</span> | AI Integration | Web3.0
+        </h2>
+        <p class="text-lg text-gray-600 mb-10 max-w-lg">
+          I build high-performance cross-platform applications with seamless user experiences, leveraging modern
+          technologies like GraphQL, AI, and blockchain.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#contact"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-medium transition shadow-lg hover:shadow-indigo-200">
+            Hire Me
+          </a>
+          <a href="#projects"
+            class="border-2 border-gray-300 hover:border-indigo-600 text-gray-700 hover:text-indigo-600 px-8 py-3 rounded-full font-medium transition">
+            View Work
+          </a>
+        </div>
+      </div>
+      <!-- <div class="md:w-1/2 flex justify-center">
+        <div class="relative">
+          <div
+            class="w-64 h-64 md:w-80 md:h-80 bg-indigo-100 rounded-full overflow-hidden border-8 border-white shadow-xl">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+              alt="Profile" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-5 -right-5 bg-white p-4 rounded-xl shadow-lg">
+            <div class="text-indigo-600 text-2xl font-bold">5+</div>
+            <div class="text-gray-500 text-sm">Years Experience</div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-4">
+        About <span class="gradient-text">Me</span>
+      </h2>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-16">
+        Get to know the developer behind the code
+      </p>
+
+      <div class="flex flex-col md:flex-row items-center gap-12">
+
+        <div class="md:w-2/3 mx-auto">
+          <h3 class="text-2xl font-display font-semibold mb-6">
+            Passionate Software Engineer Specializing in Cross-Platform Solutions
+          </h3>
+          <div class="space-y-4 text-gray-600">
+            <p>
+              I'm a skilled Software Engineer with extensive experience in mobile and web application development,
+              specializing in Flutter and React Native. With a strong foundation in building scalable, user-focused
+              solutions, I excel in leveraging modern frameworks and technologies to deliver seamless, high-performance
+              applications.
+            </p>
+            <p>
+              My expertise spans full-stack development, AI integration, GraphQL, and DevOps practices, enabling me to
+              create robust and innovative solutions for businesses across various industries. I thrive in fast-paced
+              environments, solving complex challenges with creative solutions that drive business growth.
+            </p>
+            <p>
+              Beyond coding, I'm passionate about creating intuitive user experiences and staying at the forefront of
+              emerging technologies like Web3.0 and AI-powered applications.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                <i class="fas fa-code text-indigo-600"></i>
+              </div>
+              <div>
+                <div class="font-bold">50+</div>
+                <div class="text-sm text-gray-500">Projects</div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                <i class="fas fa-users text-indigo-600"></i>
+              </div>
+              <div>
+                <div class="font-bold">30+</div>
+                <div class="text-sm text-gray-500">Clients</div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                <i class="fas fa-award text-indigo-600"></i>
+              </div>
+              <div>
+                <div class="font-bold">5+</div>
+                <div class="text-sm text-gray-500">Awards</div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                <i class="fas fa-mobile-alt text-indigo-600"></i>
+              </div>
+              <div>
+                <div class="font-bold">20+</div>
+                <div class="text-sm text-gray-500">Mobile Apps</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+        My <span class="text-indigo-600">Education</span>
+      </h2>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-12">
+        Academic journey that shaped my expertise
+      </p>
+
+      <div class="space-y-8">
+        <!-- Riphah University -->
+        <div class="edu-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border-l-4 border-indigo-500">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-800">BS Software Engineering</h3>
+              <p class="text-gray-600">Riphah International University</p>
+              <div class="flex items-center mt-2 text-gray-500">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Islamabad, Pakistan</span>
+              </div>
+            </div>
+            <div class="mt-4 md:mt-0 md:text-right">
+              <div class="text-indigo-600 font-medium">2020 – 2024</div>
+              <div class="text-sm text-gray-500">Undergraduate Degree</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GSIS Intermediate -->
+        <div class="edu-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border-l-4 border-blue-500">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-800">Intermediate of Computer Sciences</h3>
+              <p class="text-gray-600">GSIS</p>
+              <div class="flex items-center mt-2 text-gray-500">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Islamabad, Pakistan</span>
+              </div>
+            </div>
+            <div class="mt-4 md:mt-0 md:text-right">
+              <div class="text-blue-600 font-medium">2018 – 2020</div>
+              <div class="text-sm text-gray-500">Higher Secondary Education</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GSIS IGCSE -->
+        <div class="edu-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border-l-4 border-green-500">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-800">IGCSE (Cambridge-UK)</h3>
+              <p class="text-gray-600">GSIS</p>
+              <div class="flex items-center mt-2 text-gray-500">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Islamabad, Pakistan</span>
+              </div>
+            </div>
+            <div class="mt-4 md:mt-0 md:text-right">
+              <div class="text-green-600 font-medium">2016 – 2017</div>
+              <div class="text-sm text-gray-500">Cambridge International Certification</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Achievements -->
+      <div class="mt-12 bg-indigo-50 rounded-xl p-6">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Academic Achievements</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+            <span>Graduated with distinction in Software Engineering program</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+            <span>Recipient of merit-based scholarship at Riphah International University</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+            <span>Top performer in Computer Science during Intermediate studies</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+        My <span class="text-indigo-600">Certifications</span>
+      </h2>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-12">
+        Official recognition of my skills and knowledge
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Network Essentials -->
+        <div
+          class="cert-card bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border-l-4 border-blue-500">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-network-wired text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-lg font-bold">Network Essentials</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Cisco Networking Academy</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full">CISCO</span>
+              <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View Credential</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Intro -->
+        <div
+          class="cert-card bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border-l-4 border-red-500">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-robot text-red-600 text-xl"></i>
+              </div>
+              <h3 class="text-lg font-bold">Introduction to AI</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Fundamentals of Artificial Intelligence</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm bg-red-100 text-red-800 px-3 py-1 rounded-full">IBM</span>
+              <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View Credential</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- EDA -->
+        <div
+          class="cert-card bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border-l-4 border-purple-500">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-chart-line text-purple-600 text-xl"></i>
+              </div>
+              <h3 class="text-lg font-bold">EDA for ML</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Exploratory Data Analysis for Machine Learning</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm bg-purple-100 text-purple-800 px-3 py-1 rounded-full">IBM</span>
+              <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View Credential</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Dev -->
+        <div
+          class="cert-card bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border-l-4 border-yellow-500">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-code text-yellow-600 text-xl"></i>
+              </div>
+              <h3 class="text-lg font-bold">Web Development</h3>
+            </div>
+            <p class="text-gray-600 mb-4">HTML, CSS, JavaScript Fundamentals</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">IBM</span>
+              <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View Credential</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulation -->
+        <div
+          class="cert-card bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border-l-4 border-green-500">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-project-diagram text-green-600 text-xl"></i>
+              </div>
+              <h3 class="text-lg font-bold">Simulation & Modeling</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Natural Processes Simulation</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Coursera</span>
+              <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View Credential</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- IELTS -->
+        <div
+          class="cert-card bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border-l-4 border-indigo-500">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-language text-indigo-600 text-xl"></i>
+              </div>
+              <h3 class="text-lg font-bold">IELTS</h3>
+            </div>
+            <p class="text-gray-600 mb-4">International English Language Testing System</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">British Council</span>
+              <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View Score</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-4">
+        My <span class="gradient-text">Expertise</span>
+      </h2>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-16">
+        The technologies and methodologies I work with
+      </p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Mobile Development -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-indigo-50 rounded-lg">
+            <i class="fas fa-mobile-alt text-3xl text-indigo-600"></i>
+          </div>
+          <h4 class="font-semibold mb-2">Mobile Development</h4>
+          <p class="text-gray-500 text-sm">Flutter, React Native</p>
+        </div>
+
+        <!-- Frontend -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-indigo-50 rounded-lg">
+            <i class="fab fa-react text-3xl text-blue-400"></i>
+          </div>
+          <h4 class="font-semibold mb-2">Frontend</h4>
+          <p class="text-gray-500 text-sm">React, Next.js, Tailwind</p>
+        </div>
+
+        <!-- Backend -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-indigo-50 rounded-lg">
+            <i class="fas fa-server text-3xl text-green-600"></i>
+          </div>
+          <h4 class="font-semibold mb-2">Backend</h4>
+          <p class="text-gray-500 text-sm">Node.js, Django, GraphQL</p>
+        </div>
+
+        <!-- AI Integration -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-indigo-50 rounded-lg">
+            <i class="fas fa-robot text-3xl text-purple-600"></i>
+          </div>
+          <h4 class="font-semibold mb-2">AI Integration</h4>
+          <p class="text-gray-500 text-sm">OpenAI, DALL·E, n8n</p>
+        </div>
+
+        <!-- Databases -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-indigo-50 rounded-lg">
+            <i class="fas fa-database text-3xl text-blue-600"></i>
+          </div>
+          <h4 class="font-semibold mb-2">Databases</h4>
+          <p class="text-gray-500 text-sm">PostgreSQL, MongoDB, Firebase</p>
+        </div>
+
+        <!-- Web3.0 -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-indigo-50 rounded-lg">
+            <i class="fab fa-ethereum text-3xl text-gray-800"></i>
+          </div>
+          <h4 class="font-semibold mb-2">Web3.0</h4>
+          <p class="text-gray-500 text-sm">Smart Contracts, MetaMask</p>
+        </div>
+
+        <!-- DevOps -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-indigo-50 rounded-lg">
+            <i class="fab fa-docker text-3xl text-blue-500"></i>
+          </div>
+          <h4 class="font-semibold mb-2">DevOps</h4>
+          <p class="text-gray-500 text-sm">Docker, CI/CD, Azure</p>
+        </div>
+
+        <!-- UI/UX -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-indigo-50 rounded-lg">
+            <i class="fas fa-paint-brush text-3xl text-pink-500"></i>
+          </div>
+          <h4 class="font-semibold mb-2">UI/UX Design</h4>
+          <p class="text-gray-500 text-sm">Figma, Adobe XD, Canva</p>
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <h3 class="text-xl font-semibold mb-6 text-center">Additional Technologies</h3>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">BLOC</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">Redux</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">TypeScript</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">FastAPI</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">SQLite</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">Supabase</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">Git</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">Jest</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">Webhooks</span>
+          <span class="skill-pill bg-gray-100 px-4 py-2 rounded-full text-sm font-medium transition">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+        My <span class="text-indigo-600">Skills</span>
+      </h2>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-12">
+        Technologies and tools I work with
+      </p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <!-- Flutter -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-android text-blue-500"></i>
+          </div>
+          <span class="font-medium">Flutter</span>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-python text-blue-700"></i>
+          </div>
+          <span class="font-medium">Python</span>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-css3-alt text-blue-500"></i>
+          </div>
+          <span class="font-medium">CSS</span>
+        </div>
+
+        <!-- Project Management -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-tasks text-indigo-600"></i>
+          </div>
+          <span class="font-medium">Project Management</span>
+        </div>
+
+        <!-- Firebase -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-fire text-orange-500"></i>
+          </div>
+          <span class="font-medium">Firebase</span>
+        </div>
+
+        <!-- UI Prototyping (Figma) -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-figma text-purple-600"></i>
+          </div>
+          <span class="font-medium">Figma Prototyping</span>
+        </div>
+
+        <!-- Adobe XD -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-pink-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-xd text-pink-500"></i>
+          </div>
+          <span class="font-medium">Adobe XD</span>
+        </div>
+
+        <!-- Github -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-github text-gray-800"></i>
+          </div>
+          <span class="font-medium">Github</span>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-react text-blue-400"></i>
+          </div>
+          <span class="font-medium">React</span>
+        </div>
+
+        <!-- Wordpress -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-wordpress text-blue-900"></i>
+          </div>
+          <span class="font-medium">Wordpress</span>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-yellow-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-js text-yellow-500"></i>
+          </div>
+          <span class="font-medium">JavaScript</span>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-database text-green-600"></i>
+          </div>
+          <span class="font-medium">MongoDB</span>
+        </div>
+
+        <!-- UI Designing (Figma) -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-figma text-purple-600"></i>
+          </div>
+          <span class="font-medium">UI Design (Figma)</span>
+        </div>
+
+        <!-- Linux -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-linux text-orange-800"></i>
+          </div>
+          <span class="font-medium">Linux</span>
+        </div>
+
+        <!-- Adobe Illustrator -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-paint-brush text-orange-600"></i>
+          </div>
+          <span class="font-medium">Illustrator</span>
+        </div>
+
+        <!-- Fast Api -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-bolt text-green-500"></i>
+          </div>
+          <span class="font-medium">Fast API</span>
+        </div>
+
+        <!-- HTML -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-html5 text-orange-500"></i>
+          </div>
+          <span class="font-medium">HTML</span>
+        </div>
+
+        <!-- TypeScript -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-code text-blue-600"></i>
+          </div>
+          <span class="font-medium">TypeScript</span>
+        </div>
+
+        <!-- SQLite -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-database text-blue-400"></i>
+          </div>
+          <span class="font-medium">SQLite</span>
+        </div>
+
+        <!-- Rest Api's -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-exchange-alt text-green-500"></i>
+          </div>
+          <span class="font-medium">REST APIs</span>
+        </div>
+
+        <!-- MS Office -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-file-word text-red-500"></i>
+          </div>
+          <span class="font-medium">MS Office</span>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition flex items-center">
+          <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-3">
+            <i class="fab fa-git-alt text-orange-600"></i>
+          </div>
+          <span class="font-medium">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Projects Section -->
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-4">
+        My <span class="gradient-text">Projects</span>
+      </h2>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-16">
+        Some of my recent work showcasing IoT, Flutter, and full-stack capabilities
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <!-- Project 1 - Pak Agro Vertical Farming -->
+        <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Vertical Farming System" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold">Pak Agro Vertical Farming (OREL VISION)</h3>
+              <div class="flex flex-wrap gap-2 justify-end">
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Flutter</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Arduino</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">NodeMCU</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">MongoDB</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Express.js</span>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">
+              An IoT-based vertical farming system that monitors plant conditions and automates growth optimization.
+              Data is transmitted to MongoDB via NodeMCU and accessed through Express.js APIs, with a Flutter
+              frontend for control and monitoring.
+            </p>
+            <div class="mb-4">
+              <h4 class="font-semibold mb-2">Key Features:</h4>
+              <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                <li>Real-time plant monitoring with data visualization</li>
+                <li>Automated actions based on sensor data</li>
+                <li>User authentication and controls</li>
+                <li>Dashboard with system status indicators</li>
+                <li>Notifications and alerts system</li>
+              </ul>
+            </div>
+            <div class="mb-4">
+              <h4 class="font-semibold mb-2">My Responsibilities:</h4>
+              <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                <li>Project management and coordination</li>
+                <li>Flutter app development with state management</li>
+                <li>UI/UX design for mobile interface</li>
+                <li>API integration between hardware and app</li>
+                <li>Data visualization implementation</li>
+                <li>Hardware-Flutter app integration</li>
+              </ul>
+            </div>
+            <div class="text-sm text-gray-500 mt-2">May 2023 – Jun 2024</div>
+          </div>
+        </div>
+
+        <!-- Project 2 - Waste Spillage Control System -->
+        <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+          <div class="h-48 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Waste Management System" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold">Waste Spillage Control System</h3>
+              <div class="flex flex-wrap gap-2 justify-end">
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Arduino</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">IoT</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Web Interface</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Sensor Network</span>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">
+              An IoT waste management system that monitors container levels and detects toxic gases using Arduino.
+              Data is transmitted through a container network to a central web interface for visualization.
+            </p>
+            <div class="mb-4">
+              <h4 class="font-semibold mb-2">Key Features:</h4>
+              <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                <li>Real-time waste level monitoring</li>
+                <li>Toxic gas detection and alerts</li>
+                <li>Sequential data transmission across container network</li>
+                <li>Web-based interface for data visualization</li>
+                <li>Automated alerts for full capacity</li>
+                <li>System status indicators</li>
+              </ul>
+            </div>
+            <div class="mb-4">
+              <h4 class="font-semibold mb-2">My Responsibilities:</h4>
+              <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                <li>Project management and system design</li>
+                <li>Hardware integration and sensor calibration</li>
+                <li>Data transmission protocol implementation</li>
+                <li>Web interface design and development</li>
+                <li>Responsive web design implementation</li>
+                <li>Network communication between containers</li>
+              </ul>
+            </div>
+            <div class="text-sm text-gray-500 mt-2">Jun 2022 – Feb 2023</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium">
+          View All Projects
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-4">
+        My <span class="gradient-text">Services</span>
+      </h2>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-16">
+        What I can do for you
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+            <i class="fas fa-mobile-alt text-2xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Mobile App Development</h3>
+          <p class="text-gray-600 mb-4">
+            Build high-performance cross-platform mobile applications using Flutter and React Native with seamless
+            backend integration.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              Flutter & React Native
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              State Management (GetX, BLOC)
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              Firebase Integration
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+            <i class="fas fa-robot text-2xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">AI Integration</h3>
+          <p class="text-gray-600 mb-4">
+            Enhance your applications with AI capabilities including content generation, image creation, and smart
+            workflows.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              OpenAI & DALL·E
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              n8n WebHook Automation
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              Custom AI Solutions
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+            <i class="fab fa-ethereum text-2xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Web3.0 Development</h3>
+          <p class="text-gray-600 mb-4">
+            Build decentralized applications with blockchain integration, smart contracts, and cryptocurrency wallets.
+          </p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              NFT Marketplaces
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              MetaMask Integration
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-2"></i>
+              Smart Contracts
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-indigo-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-4">
+        Get In <span class="gradient-text">Touch</span>
+      </h2>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-16">
+        Have a project in mind or want to collaborate? Let's talk!
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="md:w-1/2">
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+              <input type="text" id="name"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+              <input type="email" id="email"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition">
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <input type="text" id="subject"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" rows="5"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-indigo-200">
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-xl shadow-sm h-full">
+            <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4 mt-1">
+                  <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium">Location</h4>
+                  <p class="text-gray-600">San Francisco, CA</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4 mt-1">
+                  <i class="fas fa-envelope text-indigo-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium">Email</h4>
+                  <p class="text-gray-600">hello@example.com</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4 mt-1">
+                  <i class="fas fa-phone-alt text-indigo-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium">Phone</h4>
+                  <p class="text-gray-600">+1 (555) 123-4567</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <h3 class="text-xl font-semibold mb-6">Follow Me</h3>
+              <div class="flex space-x-4">
+                <a href="#"
+                  class="w-12 h-12 rounded-full bg-gray-100 hover:bg-indigo-600 hover:text-white flex items-center justify-center transition">
+                  <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="#"
+                  class="w-12 h-12 rounded-full bg-gray-100 hover:bg-indigo-600 hover:text-white flex items-center justify-center transition">
+                  <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#"
+                  class="w-12 h-12 rounded-full bg-gray-100 hover:bg-indigo-600 hover:text-white flex items-center justify-center transition">
+                  <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="#"
+                  class="w-12 h-12 rounded-full bg-gray-100 hover:bg-indigo-600 hover:text-white flex items-center justify-center transition">
+                  <i class="fab fa-dribbble text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-gray-900 text-gray-400">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <a href="#" class="text-2xl font-bold font-display text-white">Portfolio.</a>
+          <p class="mt-2">Building digital experiences that matter.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#home" class="hover:text-white transition">Home</a>
+          <a href="#about" class="hover:text-white transition">About</a>
+          <a href="#skills" class="hover:text-white transition">Skills</a>
+          <a href="#projects" class="hover:text-white transition">Projects</a>
+          <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p>© 2023 Portfolio. All rights reserved.</p>
+        <div class="mt-4 md:mt-0">
+          <a href="#" class="text-sm hover:text-white transition">Privacy Policy</a>
+          <span class="mx-2">•</span>
+          <a href="#" class="text-sm hover:text-white transition">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle functionality
+    document.querySelector('nav button').addEventListener('click', function () {
+      const navLinks = document.querySelector('nav .hidden');
+      navLinks.classList.toggle('hidden');
+      navLinks.classList.toggle('flex');
+      navLinks.classList.toggle('flex-col');
+      navLinks.classList.toggle('absolute');
+      navLinks.classList.toggle('top-16');
+      navLinks.classList.toggle('left-0');
+      navLinks.classList.toggle('right-0');
+      navLinks.classList.toggle('bg-white');
+      navLinks.classList.toggle('p-4');
+      navLinks.classList.toggle('space-y-4');
+      navLinks.classList.toggle('space-x-0');
+      navLinks.classList.toggle('shadow-md');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+
+        // Close mobile menu if open
+        const navLinks = document.querySelector('nav .hidden');
+        if (!navLinks.classList.contains('hidden')) {
+          navLinks.classList.add('hidden');
+          navLinks.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'left-0', 'right-0',
+            'bg-white', 'p-4', 'space-y-4', 'space-x-0', 'shadow-md');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
