@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify"
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify && cp index.html public/ && cp output.css public/"
   },
   "keywords": [],
   "author": "",
