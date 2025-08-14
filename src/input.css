@@ -15,7 +15,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 20px;
+    scroll-padding-top: 80px;
   }
 
   body {
@@ -45,5 +45,36 @@
   .skill-pill:hover {
     background-color: var(--primary);
     color: white;
+  }
+}
+
+/* Interactive card hovers and responsive tweaks */
+@layer base {
+  .skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+    border-left: 3px solid var(--primary);
+  }
+
+  .cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .edu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+  }
+
+  /* Sample Work section hover effects */
+  .sample-work-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      padding-top: 80px;
+    }
   }
 }
